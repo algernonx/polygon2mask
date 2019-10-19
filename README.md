@@ -3,7 +3,7 @@
 A function to transfer polygon to mask, which use 1 to signal the inner points.
 
 <div align="center">
-  <img src="demo//demo.png" width="700px" />
+  <img src="demo//demo.jpg" width="700px" />
   <p>Example p2m output.</p>
 </div>
 
@@ -14,4 +14,4 @@ A function to transfer polygon to mask, which use 1 to signal the inner points.
 
 ## Details
 
-- [Description of polygon2mask algorithm](https://arxiv.org/abs/1703.06870)
+- [Description of polygon2mask algorithm](https://zhuanlan.zhihu.com/p/87433705)
