@@ -1,6 +1,5 @@
 import numpy as np
 from collections import defaultdict
-import cv2
 
 
 def polygon2mask(image_size, polygon, exist_mask=None):
@@ -149,15 +148,4 @@ def polygon2mask(image_size, polygon, exist_mask=None):
             if r < image_size[0]:
                 mask[r, int(np.ceil(c_start)):int(c_end) + 1] = 1
 
-    return mask
-
-
-def polygon2mask2(img_shape, polygons, exist_mask=None):
-    if exist_mask is None:
-        mask = np.zeros(img_shape, dtype=np.uint8)
-    else:
-        mask = exist_mask
-    polygons = np.asarray(polygons, np.int32)
-    polygons = polygons.reshape(1, -1, 2)
-    cv2.fillPoly(mask, polygons, color=1)
     return mask
